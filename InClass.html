@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Day 01 Game</title>
+        
+    </head>
+    <body>
+        <canvas id="canv"></canvas>
+        <script>
+            //Java: int a = 1
+            //Python: a = 1
+            //JS: let a = 1
+            //Java: final int a = 1
+            //JS: const a = 1
+            //Bad JS: var a = 1
+            //Bad JS: a = 1
+
+            const canvas = document.querySelector("#canv")
+            const ctx = canvas.getContext("2d")
+
+            ctx.fillStyle = "black"
+            ctx.beginPath()
+            //Instructions
+            // ctx.lineTo(0, 0)
+            // ctx.lineTo(100, 100)
+            // ctx.lineTo(0, 100)
+            ctx.rect(0,0,canvas.width,canvas.height)
+            ctx.fill()
+
+            ctx.fillStyle = "white"
+            ctx.fillText("TP0%", 0, 10)
+
+            ctx.fillStyle = "blue"
+            ctx.beginPath()
+            ctx.arc(100, 100, 25, 0, Math.PI*2)
+            ctx.fill()
+
+            ctx.fillStyle = "pink"
+            ctx.fillStyle = "rgb(255, 120, 120)"
+            ctx.fillStyle = "#FF6666"
+
+
+            ctx.beginPath()
+            ctx.lineTo(200, 100)
+            ctx.lineTo(225, 80)
+            ctx.lineTo(230, 100)
+            ctx.lineTo(225, 125)
+            ctx.lineTo(200, 150)
+            ctx.lineTo(175, 125)
+            ctx.lineTo(170, 100)
+            ctx.lineTo(175, 80)
+
+
+            
+            ctx.fill()
+        </script>
+    </body>
+</html>
